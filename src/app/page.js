@@ -43,6 +43,8 @@ const landingPage = () => {
     return <p>Error</p>;
   }
 
+  console.log(wppNumbers);
+
   return (
     <div className={styles.container}>
       <div className={styles.backDiv}>
