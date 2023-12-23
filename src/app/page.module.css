@@ -59,7 +59,7 @@
     height: 5rem;
 }
 
-.buttons button{
+.buttons a{
     height: 3rem;
     width: 18.5rem;
     border-radius: 10px;
@@ -111,7 +111,7 @@
     .texto{
         font-size: 0.8rem;
     }
-    .buttons button{
+    .buttons a{
         width: 6rem;
         height: 3rem;
         font-size: 0.6rem;

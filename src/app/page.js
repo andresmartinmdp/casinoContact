@@ -31,19 +31,9 @@ const landingPage = () => {
     process.env.NEXT_PUBLIC_NUMBER10,
   ];
 
-  const linkTo = (site) => {
-    if (site === "chat") {
-      window.location.href = "https://casino-chat.vercel.app";
-    } else {
-      window.location.href = wppNumbers[parseInt(query) - 1];
-    }
-  };
-
   if (!actualNumber || actualNumber === null || query > 10 || query < 1) {
     return <p>Error</p>;
   }
-
-  console.log(wppNumbers);
 
   return (
     <div className={styles.container}>
@@ -54,13 +44,13 @@ const landingPage = () => {
       <img className={styles.logo} src="logo.png" />
       <p className={styles.texto}>Envianos un mensaje para crear tu usuario</p>
       <div className={styles.buttons}>
-        <button onClick={() => linkTo("whatsapp")} className={styles.button1}>
+        <a href={wppNumbers[parseInt(query) - 1]} className={styles.button1}>
           <img src="https://www.svgrepo.com/show/452133/whatsapp.svg" />
           Whatsapp
-        </button>
-        <button onClick={() => linkTo("chat")} className={styles.button2}>
+        </a>
+        <a href="https://casino-chat.vercel.app" className={styles.button2}>
           <img src="https://www.svgrepo.com/show/510890/chat-circle.svg" /> Chat
-        </button>
+        </a>
       </div>
     </div>
   );
