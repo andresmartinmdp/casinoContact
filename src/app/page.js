@@ -35,7 +35,8 @@ const landingPage = () => {
     if (site === "chat") {
       window.location.href = "https://casino-chat.vercel.app";
     } else {
-      if (toString(wppNumbers[parseInt(query) - 1]) !== "false") {
+      console.log(typeof wppNumbers[parseInt(query) - 1]);
+      if (wppNumbers[parseInt(query) - 1] !== "false") {
         window.location.href = wppNumbers[parseInt(query) - 1];
       }
     }
