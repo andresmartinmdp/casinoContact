@@ -1,0 +1,122 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+}
+
+.backDiv{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+.blackWall{
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.background{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.logo{
+    height: 20rem;
+    object-fit: cover;
+    filter: drop-shadow(0px 6px 6px #ff000071);
+}
+
+.texto{
+    color: white;
+    position: relative;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.buttons img {
+    height: 2rem;
+    object-fit: cover;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    width: 50rem;
+    height: 5rem;
+}
+
+.buttons button{
+    height: 3rem;
+    width: 18.5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.buttons button:hover{
+    transform: scale(1.2);
+}
+
+.button1{
+    background-color: rgb(94, 194, 94);
+    color: white;
+}
+
+.button2{
+    color: white;
+    background-color: rgb(36, 36, 36);
+}
+
+.button2 img{
+    filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 800px) {
+    .logo{
+        height: 10rem;
+    }
+    .texto{
+        font-size: 1rem;
+    }
+    .buttons button{
+        width: 8rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .logo{
+        height: 8rem;
+    }
+    .texto{
+        font-size: 0.8rem;
+    }
+    .buttons button{
+        width: 6rem;
+        height: 3rem;
+        font-size: 0.6rem;
+    }
+    .buttons img{
+        height: 0.8rem;
+    }
+}
