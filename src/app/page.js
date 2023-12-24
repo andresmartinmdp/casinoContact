@@ -35,6 +35,13 @@ const landingPage = () => {
     return <p>Error</p>;
   }
 
+  console.log(wppNumbers);
+  useEffect(() => {
+    if (wppNumbers && query) {
+      console.log(wppNumbers[query - 1]);
+    }
+  }, [wppNumbers, query]);
+
   return (
     <div className={styles.container}>
       <div className={styles.backDiv}>
