@@ -55,9 +55,6 @@ const landingPage = () => {
           <img src="https://www.svgrepo.com/show/452133/whatsapp.svg" />
           Whatsapp
         </a>
-        <a href="https://casino-chat.vercel.app" className={styles.button2}>
-          <img src="https://www.svgrepo.com/show/510890/chat-circle.svg" /> Chat
-        </a>
       </div>
     </div>
   );
